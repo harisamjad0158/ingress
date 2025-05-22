@@ -1,14 +1,17 @@
-kubectl apply -f all-in-one.yml
+# Kubernetes Ingress Configuration for Online Shop
 
-kubectl apply -f ingress.yml
+This repository contains Kubernetes configuration files to deploy an online shop application with Nginx and Apache services using Kind on an EC2 instance.
 
+## Prerequisites
 
-kubectl port-forward -n ingress-nginx svc/ingress-nginx-controller 80:80 --address=0.0.0.0
+- Kubernetes cluster (using Kind)
+- kubectl installed
+- Docker installed
+- EC2 instance with proper security group rules
 
+## Installation
 
-browse it.........
-http://3.88.56.195.nip.io/shop
-
-http://3.88.56.195.nip.io/nginx
-
-http://3.88.56.195.nip.io/apache
+1. Clone this repository:
+   ```bash
+   git clone git@github.com:harisamjad0158/ingress.git
+   cd ingress
