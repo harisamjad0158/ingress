@@ -1,17 +1,10 @@
-# Kubernetes Ingress Configuration for Online Shop
+# Kubernetes Ingress Deployment
 
-This repository contains Kubernetes configuration files to deploy an online shop application with Nginx and Apache services using Kind on an EC2 instance.
+Quick setup for online shop with Nginx/Apache services on EC2 (54.161.250.53).
 
-## Prerequisites
-
-- Kubernetes cluster (using Kind)
-- kubectl installed
-- Docker installed
-- EC2 instance with proper security group rules
-
-## Installation
-
-1. Clone this repository:
-   ```bash
-   git clone git@github.com:harisamjad0158/ingress.git
-   cd ingress
+## 🚀 Quick Start
+```bash
+git clone git@github.com:harisamjad0158/ingress.git
+cd ingress
+kubectl apply -f all-in-one.yml
+kubectl apply -f ingress.yml
