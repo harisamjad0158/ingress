@@ -1,15 +1,14 @@
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: multi-service-ingress
-  namespace: app-ns
+  namespace: online-shop
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  ingressClassName: nginx
   rules:
-    - host: 3.88.56.195.nip.io
-      http:
+    - http:
         paths:
           - path: /shop
             pathType: Prefix
